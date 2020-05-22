@@ -1,43 +1,34 @@
-.showTime__Item {
-    padding: 0px 20px;
-    border: 1px solid black;
-    .showTime__img {
-        position: relative;
-        &:hover {
-            .overLay {
-                transform: scale(1);
+.showTimeItem {
+    transform: scale(0.85);
+    .showTimeItem__top {
+        .overlay {
+            .mask {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
-        .overLay {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.377);
-            width: 100%;
-            height: 100%;
-            top: 0;
-            transition: all 0.2s linear;
-            transform: scale(0);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }
-    .showTime__bottom {
-        background-color: white;
-        .showTime__text {
-            max-height: 150px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            a {
-                &:hover {
-                    text-decoration: none;
-                }
-                .filmName {
-                    margin: 5px 0;
-                    font-size: 1.5rem;
-                    cursor: pointer;
-                    color: rgb(97, 2, 2);
-                    text-align: center;
-                }
+    .showTimeItem__bot{
+        .tenPhim{
+            color: $color-white-0;
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.2s linear;
+            &:hover{
+                color: $color-yellow;
+            }
+        }
+        .noiDung{
+            text-align: center;
+            color: $color-gray-6;
+        }
+        .btnTicket{
+            font-size: 1.1em;
+            i{
+                margin-right: 10px;
+                font-size: 1.5em;
             }
         }
     }
