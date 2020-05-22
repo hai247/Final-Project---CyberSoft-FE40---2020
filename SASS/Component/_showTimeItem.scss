@@ -1,5 +1,7 @@
-.showTimeItem {
+.scaleItem{
     transform: scale(0.85);
+}
+.showTimeItem {
     .showTimeItem__top {
         .overlay {
             .mask {
@@ -23,13 +25,6 @@
         .noiDung{
             text-align: center;
             color: $color-gray-6;
-        }
-        .btnTicket{
-            font-size: 1.1em;
-            i{
-                margin-right: 10px;
-                font-size: 1.5em;
-            }
         }
     }
 }

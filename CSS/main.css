@@ -80,7 +80,34 @@
   margin: 10px;
 }
 
-.showTimeItem {
+.info {
+  color: white;
+}
+
+.info .tenPhim {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.info .noiDung {
+  margin: 20px 0;
+}
+
+.modalTrailer .modal-content .closeBtn {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(100%, -90%);
+          transform: translate(100%, -90%);
+  color: red;
+}
+
+.modalTrailer .modal-content .closeBtn:hover {
+  color: #a72a2a;
+}
+
+.scaleItem {
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
 }
@@ -115,15 +142,6 @@
   color: #dedfe0;
 }
 
-.showTimeItem .showTimeItem__bot .btnTicket {
-  font-size: 1.1em;
-}
-
-.showTimeItem .showTimeItem__bot .btnTicket i {
-  margin-right: 10px;
-  font-size: 1.5em;
-}
-
 .modal-body .btn-radius {
   border-radius: 50px;
 }
@@ -136,8 +154,39 @@
   color: #ea4335;
 }
 
+.detailInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.detailInfo p {
+  display: block;
+  color: #cacbcc;
+  font-size: 13px;
+}
+
+.detailInfo .field {
+  font-weight: bold;
+}
+
+.starGroup {
+  text-align: center;
+}
+
+.starGroup i {
+  font-size: 1.2rem;
+  color: #F4C150;
+}
+
 body {
   position: relative;
   background-image: url("./../img/body-bg2.jpg") !important;
+  background-attachment: fixed;
+}
+
+.playTrailer:hover {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */

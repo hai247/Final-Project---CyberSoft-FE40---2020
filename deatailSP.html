@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+
+    <!-- custom -->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="myNavbar">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/—Pngtree—cartoon astronauts_3171372.png" alt="logo-astronauts_3171372">
+                </a>
+                LOGO
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="my-navbar collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showTime">Lịch chiếu<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#theature">Cụm rạp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ứng dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#elegantModalForm">Login</a>
+                    </li>
+            </div>
+        </nav>
+    </header>
+    <section class="info" style="padding-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="showTimeItem">
+                        <div class="showTimeItem__top">
+                            <div class="view overlay">
+                                <img src="./img/phim3.jpg" class="img-fluid w-100" alt="">
+                                <div class="mask rgba-black-light">
+                                    <a data-toggle="modal" data-target="#modalTrailer">
+                                        <img src="./img/play-video.png" alt="" srcset="" class="playTrailer">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="align-self: center;">
+                    <h3 class="tenPhim">Tên phim</h3>
+                    <p class="noiDungPhim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quisquam est
+                        iure cum ipsum saepe
+                        culpa labore quasi dolorum, laudantium voluptatem dolor enim neque vel veniam vitae, facere fuga
+                        repellendus?</p>
+                    <div class="detailInfo">
+                        <p class="field">Ngày công chiếu</p>
+                        <p>22/05/2020</p>
+                        <p class="field">Đạo diễn</p>
+                        <p>Hà Học Tiến</p>
+                        <p class="field">Diễn viên</p>
+                        <p>Đỗ Bá Hải</p>
+                        <p class="field">Thể loại</p>
+                        <p>Hài hước</p>
+                        <p class="field">Định dạng</p>
+                        <p>3D</p>
+                        <p class="field">Quốc gia</p>
+                        <p>Mỹ</p>
+
+                    </div>
+                    <button class="btnTicket btn peach-gradient"><i class="fa fa-ticket" aria-hidden="true"></i>Mua vé
+                        ngay</button>
+                </div>
+                <div class="col-md-2 text-center" style="align-self: center;">
+                    <p>Điểm IMDb</p>
+                    <div id="fluid-meter" class="mx-auto"></div>
+                    <div class="starGroup">
+                        <p>5 người đã đánh giá</p>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/meter/js-fluid-meter.js"></script>
+    <script>
+        var fm = new FluidMeter();
+        fm.init({
+            targetContainer: document.getElementById("fluid-meter"),
+            fillPercentage: 80,
+            options: {
+                fontFamily: "Oxygen",
+                drawPercentageSign: true,
+                drawBubbles: true,
+                size: 150,
+                borderWidth: 7,
+                backgroundColor: "#e2e2e2",
+                foregroundColor: "#fafafa",
+                foregroundFluidLayer: {
+                    fillStyle: "#55DD10",
+                    angularSpeed: 100,
+                    maxAmplitude: 12,
+                    frequency: 30,
+                    horizontalSpeed: -150
+                },
+                backgroundFluidLayer: {
+                    fillStyle: "#CDDD10",
+                    angularSpeed: 80,
+                    maxAmplitude: 9,
+                    frequency: 30,
+                    horizontalSpeed: 150
+                }
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+</body>
+
+</html>
