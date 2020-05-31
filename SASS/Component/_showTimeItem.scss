@@ -3,8 +3,12 @@
 }
 .showTimeItem {
     .showTimeItem__top {
+        img{
+            border-radius: 10px;
+        }
         .overlay {
             .mask {
+                cursor: grab;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -13,6 +17,7 @@
     }
     .showTimeItem__bot{
         .tenPhim{
+            font-size: 1.5rem;
             color: $color-white-0;
             display: block;
             font-weight: bold;
@@ -23,6 +28,7 @@
             }
         }
         .noiDung{
+            font-size: 0.9rem;
             text-align: center;
             color: $color-gray-6;
         }
