@@ -4,4 +4,13 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 0;
+    #carouselExampleControls{
+        .control-group{
+            display: flex;
+            justify-content: center;
+            .controlBtn{
+                margin: 10px;
+            }
+        }
+    }
 }

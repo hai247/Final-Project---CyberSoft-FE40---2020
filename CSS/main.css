@@ -56,9 +56,8 @@
 }
 
 .navbar {
-  background-color: black;
-  -webkit-box-shadow: 0px 10px 37px 10px rgba(255, 255, 255, 0.6);
-          box-shadow: 0px 10px 37px 10px rgba(255, 255, 255, 0.6);
+  background: radial-gradient(circle 1192px at 21.5% 49.5%, #5b1537 0.1%, black 100.2%);
+  background-position: center;
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -72,21 +71,16 @@
   width: 50px;
 }
 
-.navbar .logo span {
-  margin: 0;
-  font-weight: 700;
-  font-family: monospace;
-  font-size: 2rem;
-  background: linear-gradient(196deg, #f5e600 0%, #f55600 100%);
-  /* clip hackery */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .navbar .my-navbar ul li {
   font-size: 1.1rem;
   color: white;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .my-navbar ul li {
+    text-align: center;
+  }
 }
 
 .navbar .my-navbar ul li a.nav-link {
@@ -96,31 +90,36 @@
 }
 
 .navbar .my-navbar ul li a.nav-link:hover {
-  color: yellow;
+  color: yellow !important;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border-bottom: 1px;
 }
 
-.carousel {
-  padding-top: 2.5rem;
+.carouselTop {
+  padding-top: 5rem;
 }
 
-.carousel #carouselIndicators ol li {
+.carouselTop #carouselIndicators ol li {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.253);
 }
 
-.carousel #carouselIndicators ol li.active {
+.carouselTop #carouselIndicators ol li.active {
   background-color: rgba(255, 0, 0, 0.692);
 }
 
-.carousel #carouselIndicators .carousel-inner .carousel-item:hover .playTrailer {
+.carouselTop #carouselIndicators .carousel-inner .carousel-item:hover .playTrailer {
   opacity: 1;
 }
 
-.carousel #carouselIndicators .carousel-inner .carousel-item .playTrailer {
+.carouselTop #carouselIndicators .carousel-inner .carousel-item .playTrailer {
+  padding: 10rem;
   opacity: 0;
+  z-index: 2;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -130,8 +129,17 @@
   transition: all 0.2s linear;
 }
 
-.carousel #carouselIndicators .carousel-inner .carousel-item .playTrailer:hover {
-  opacity: 0.9;
+.showTime #carouselExampleControls .control-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showTime #carouselExampleControls .control-group .controlBtn {
+  margin: 10px;
 }
 
 .showTime {
@@ -193,6 +201,57 @@
   width: 100%;
   height: calc(690px / 6);
   line-height: calc(690px / 6);
+}
+  
+.info {
+  color: white;
+}
+
+.info .tenPhim {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.info .noiDung {
+  margin: 20px 0;
+}
+
+.swiper-container {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.swiper-container .showTimeItem {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.modalTrailer .modal-content .closeBtn {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(100%, -90%);
+          transform: translate(100%, -90%);
+  color: red;
+}
+
+.modalTrailer .modal-content .closeBtn:hover {
+  color: #a72a2a;
+}
+
+.scaleItem {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.showTimeItem .showTimeItem__top img {
+  border-radius: 10px;
+}
+
+.showTimeItem .showTimeItem__top .overlay .mask {
+  cursor: -webkit-grab;
+  cursor: grab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,6 +547,57 @@
 
 .cinema .listMovie .listMovie__brand:nth-last-child(1) {
   display: none;
+}
+.showTimeItem .showTimeItem__bot .tenPhim {
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.showTimeItem .showTimeItem__bot .tenPhim:hover {
+  color: #F4C150;
+}
+
+.showTimeItem .showTimeItem__bot .noiDung {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #dedfe0;
+}
+
+.modal-body .btn-radius {
+  border-radius: 50px;
+}
+
+.modal-body .btn-facebook {
+  color: #3b5998;
+}
+
+.modal-body .btn-google {
+  color: #ea4335;
+}
+
+.detailInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.detailInfo p {
+  display: block;
+  color: #cacbcc;
+  font-size: 13px;
+}
+
+.detailInfo .field {
+  font-weight: bold;
+}
+
+.starGroup {
   text-align: center;
   margin-top: 30px;
   font-weight: 500;
@@ -501,9 +611,97 @@
   }
 }
 
+.starGroup i {
+  font-size: 1.2rem;
+  color: #F4C150;
+}
+
+.starGroup i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btnTicket {
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btnTicket i {
+  margin-right: 2px;
+  font-size: 1rem;
+}
+
+.btnTicket:hover {
+  -webkit-box-shadow: 0 0 5px #ffd86f, 0 0 25px #ffd86f, 0 0 50px #ffd86f !important;
+          box-shadow: 0 0 5px #ffd86f, 0 0 25px #ffd86f, 0 0 50px #ffd86f !important;
+}
+
+@media screen and (max-width: 768px) {
+  .btnTicket {
+    font-size: 0.7rem !important;
+  }
+}
+
+.defaultTab {
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.defaultTab .nav-item .nav-link {
+  font-family: neon;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: #686f7a;
+  border: none;
+}
+
+.defaultTab .nav-item .nav-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.defaultTab .nav-item .nav-link.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: none;
+  background-color: transparent;
+  color: #dbd949;
+  animation: flaming 4s linear infinite alternate-reverse;
+}
+
+@-webkit-keyframes flaming {
+  50% {
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes flaming {
+  50% {
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@font-face {
+  font-family: neon;
+  src: url(../font/neon_pixel-7.ttf);
+}
+
 body {
   position: relative;
-  background-image: url("./../img/body-bg.jpg") !important;
+  background-image: url("./../img/body-bg2.jpg") !important;
+  background-attachment: fixed;
+}
+
+.playTrailer:hover {
+  opacity: 0.6;
 }
 
 .ps__rail-x {
