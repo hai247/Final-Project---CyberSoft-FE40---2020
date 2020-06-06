@@ -8,15 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- slick -->
+  <!-- * slick -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <!-- custom -->
+
+  <!-- * Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- * Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital@1&family=Tenali+Ramakrishna&display=swap"
+    rel="stylesheet">
+  <!-- * Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- * Meterial design bootstrap -->
+  <link rel="stylesheet" href="./myapp/node_modules/mdbootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./myapp/node_modules/mdbootstrap/css/mdb.min.css">
+  <link rel="stylesheet" href="./myapp/node_modules/mdbootstrap/css/style.css">
+
+  <!-- * Custom -->
   <link rel="stylesheet" href="./CSS/main.css">
 </head>
+<!-- onload="getFirstBrand()" -->
 
 <body>
   <header>
@@ -27,6 +39,7 @@
         </a>
         <span>CINEMAX</span>
       </div>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +65,9 @@
       </div>
     </nav>
   </header>
+
   <div id="myScroll" data-spy="scroll" data-target="#myNavbar">
+    <!-- * Carousel -->
     <section class="carousel" id="carousel">
       <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -84,10 +99,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="filterTool">
-
-      </div>
+      <div class="filterTool"></div>
     </section>
+
+    <!-- * Show time -->
     <section class="showTime" id="showTime">
       <div class="container">
         <div class="showTimeCarousel">
@@ -189,22 +204,973 @@
         </div>
       </div>
     </section>
-    <section class="theature" id="theature"></section>
+
+    <!-- * Cinema -->
+    <section class="cinema" id="cinema">
+      <div class="container" id="cinemaTopPadding">
+        <div class="row">
+          <!-- * Brand of theatre -->
+          <div class="brands" id='brandsCinema'>
+            <button class="brands__item" id='bhdBrand'>
+              <img src="./img/bhd.png" alt="">
+            </button>
+            <button class="brands__item" id='cgvBrand'>
+              <img src="./img/cgv.png" alt="">
+            </button>
+            <button class="brands__item" id='cinestarBrand'>
+              <img src="./img/cns.png" alt="">
+            </button>
+            <button class="brands__item" id='galaxyBrand'>
+              <img src="./img/galaxy.png" alt="">
+            </button>
+            <button class="brands__item" id='lotteBrand'>
+              <img src="./img/lotte.png" alt="">
+            </button>
+            <button class="brands__item" id='megaGSBrand'>
+              <img src="./img/mega.png" alt="">
+            </button>
+          </div>
+
+          <!-- * List of cinema -->
+          <div class="listCinema scrollbar-sunny-morning" id='listsCinema'>
+            <div id="bhdCinema" class="cinema__item">
+              <!-- * Cinema Address -->
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./../img/bhd1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">BHD Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+            </div>
+            <div id="cgvCinema" class="cinema__item">
+              <!-- * Cinema Address -->
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+              <button class="cinemaInfo">
+                <img class="cinemaImage" src="./img/cgv1.jpg" alt="">
+                <div class="wrapInfo">
+                  <div class="cinemaName">CGV aaaaaaaaaaaaaabbbbbbbbbbbbbbbb Star - Bitexco</div>
+                  <div class="cinemaAdd">L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1 L3-Bitexco Icon 68, 2 Hải Triều, Q.1</div>
+                  <div class="cinemaDetail"><span>
+                      <a href="#">[chi tiết]</a>
+                    </span></div>
+                </div>
+              </button>
+            </div>
+            <div class="cinema__item">
+              <p>Cụm chiếu chưa mở</p>
+            </div>
+          </div>
+
+          <!-- * List of movie-->
+          <div class="listMovie scrollbar-sunny-morning" id='listsMovie'>
+            <!-- * Show Time -->
+            <div id="bhdListMovie" class="listMovie__brand">
+              <div id="bhdListMovieBranch1" class="listMovie__item">
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bhdListMovieBranch2" class="listMovie__item">
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="cgvListMovie" class="listMovie__brand">
+              <div id="cgvListMovieBranch1" class="listMovie__item">
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i2.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="cgvListMovieBranch2" class="listMovie__item">
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeOnShow">
+                  <div class="showTime__content">
+                    <img class="sT-content__image" src="./../img/sT_i1.jpg" alt="">
+                    <div class="sT-content__text">
+                      <p class="sT-c-text__info">
+                        <span class="sT-c-t-info__limitAge">C18</span>
+                        <span class="sT-c-t-info__title">
+                          Bloodshot
+                        </span>
+                      </p>
+                      <p class="sT-c-text__showDuration">
+                        120 phút - IMDb 8.2
+                      </p>
+                    </div>
+                  </div>
+                  <div class="showTime__schedule">
+                    <div class="sT-schedule__2d3d">
+                      <p>2D</p>
+                      <p>Digital</p>
+                    </div>
+                    <div class="sT-schedule__sessions">
+                      <a href="#">
+                        <span>11:00 <span class="endTime">~ 13:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>23:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                      <a href="#">
+                        <span>13:00 <span class="endTime">~ 15:00</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listMovie__brand">
+              <p>Suất chiếu chưa mở</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- * Info -->
     <section class="info" id="info"></section>
+
   </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <!-- slick -->
+
+  <!-- * slick -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
   <script type="text/javascript">
     $('.showTimeCarousel').slick({
       centerMode: false,
@@ -232,6 +1198,11 @@
       ]
     });
   </script>
-  </div>
+
+  <!-- * Meterial design bootstrap -->
+  <script type="text/javascript" src="./myapp/node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+  <!-- * Custom Javascript -->
+  <script src="./js/index.js"></script>
 
 </html>
