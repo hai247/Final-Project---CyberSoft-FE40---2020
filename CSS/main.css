@@ -1,60 +1,3 @@
-.showTime__Item {
-  padding: 0px 20px;
-  border: 1px solid black;
-}
-
-.showTime__Item .showTime__img {
-  position: relative;
-}
-
-.showTime__Item .showTime__img:hover .overLay {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.showTime__Item .showTime__img .overLay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.377);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.showTime__Item .showTime__bottom {
-  background-color: white;
-}
-
-.showTime__Item .showTime__bottom .showTime__text {
-  max-height: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.showTime__Item .showTime__bottom .showTime__text a:hover {
-  text-decoration: none;
-}
-
-.showTime__Item .showTime__bottom .showTime__text a .filmName {
-  margin: 5px 0;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #610202;
-  text-align: center;
-}
-
 .navbar {
   background: radial-gradient(circle 1192px at 21.5% 49.5%, #5b1537 0.1%, black 100.2%);
   background-position: center;
@@ -142,14 +85,6 @@
   margin: 10px;
 }
 
-.showTime {
-  background-image: url("./../img/bg-space2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 50px 0;
-}
-
 .activeLM {
   opacity: 1 !important;
   -webkit-box-shadow: inset 0px 0px 7px 7px #dedfe0;
@@ -201,57 +136,6 @@
   width: 100%;
   height: calc(690px / 6);
   line-height: calc(690px / 6);
-}
-  
-.info {
-  color: white;
-}
-
-.info .tenPhim {
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.info .noiDung {
-  margin: 20px 0;
-}
-
-.swiper-container {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.swiper-container .showTimeItem {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.modalTrailer .modal-content .closeBtn {
-  font-size: 2rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translate(100%, -90%);
-          transform: translate(100%, -90%);
-  color: red;
-}
-
-.modalTrailer .modal-content .closeBtn:hover {
-  color: #a72a2a;
-}
-
-.scaleItem {
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-}
-
-.showTimeItem .showTimeItem__top img {
-  border-radius: 10px;
-}
-
-.showTimeItem .showTimeItem__top .overlay .mask {
-  cursor: -webkit-grab;
-  cursor: grab;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,7 +431,79 @@
 
 .cinema .listMovie .listMovie__brand:nth-last-child(1) {
   display: none;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 768px) {
+  .cinema .brands, .cinema .listCinema, .cinema .listMovie {
+    width: 100%;
+  }
+}
+
+.info {
+  color: white;
+}
+
+.info .tenPhim {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.info .noiDung {
+  margin: 20px 0;
+}
+
+.swiper-container {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.swiper-container .showTimeItem {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.modalTrailer .modal-content .closeBtn {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(100%, -90%);
+          transform: translate(100%, -90%);
+  color: red;
+}
+
+.modalTrailer .modal-content .closeBtn:hover {
+  color: #a72a2a;
+}
+
+.scaleItem {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.showTimeItem .showTimeItem__top img {
+  border-radius: 10px;
+}
+
+.showTimeItem .showTimeItem__top .overlay .mask {
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .showTimeItem .showTimeItem__bot .tenPhim {
   font-size: 1.5rem;
   color: #fff;
@@ -599,16 +555,6 @@
 
 .starGroup {
   text-align: center;
-  margin-top: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-@media only screen and (max-width: 768px) {
-  .cinema .brands, .cinema .listCinema, .cinema .listMovie {
-    width: 100%;
-  }
 }
 
 .starGroup i {
@@ -702,33 +648,5 @@ body {
 
 .playTrailer:hover {
   opacity: 0.6;
-}
-
-.ps__rail-x {
-  visibility: hidden;
-}
-
-.ps__rail-y {
-  width: 0;
-}
-
-.ps__rail-y:hover > .ps__thumb-y {
-  width: 6px;
-}
-
-.ps__rail-y:active > .ps__thumb-y {
-  width: 6px;
-}
-
-.ps__rail-y:focus > .ps__thumb-y {
-  width: 6px;
-}
-
-.ps__rail-y .ps__thumb-y {
-  min-height: 541px;
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 /*# sourceMappingURL=main.css.map */

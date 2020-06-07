@@ -1,31 +1,3 @@
-.ps__rail-x {
-    visibility: hidden;
-}
-.ps__rail-y  {
-    width: 0;
-}
-.ps__rail-y {
-    &:hover>.ps__thumb-y {
-        width: 6px;
-    }
-    &:active>.ps__thumb-y {
-        width: 6px;
-    }
-    &:focus>.ps__thumb-y {
-        width: 6px;
-    }
-}
-
-.ps__rail-y {
-    .ps__thumb-y {
-        min-height: 541px;
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-        background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
-        background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
-        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); 
-    }
-}
 .playTrailer{
     &:hover{
         opacity: 0.6;
