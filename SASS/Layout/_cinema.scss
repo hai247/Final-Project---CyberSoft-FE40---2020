@@ -3,7 +3,7 @@
     img {
         opacity: 1 !important;
     }    
-    box-shadow: inset 0px 0px 7px 7px $color-gray-6;
+    box-shadow: inset 0px 0px 15px 3px $color-gray-3;
 }
 
 .scrollbar-sunny-morning::-webkit-scrollbar-track {
@@ -70,7 +70,7 @@
                 img {
                     opacity: 1;
                 }
-                box-shadow: inset 0px 0px 5px 5px $color-gray-6;
+                box-shadow: inset 0px 0px 15px 3px $color-gray-3;
             }                        
         }
     }
@@ -82,7 +82,7 @@
         width: 26%;
         position: relative;
         overflow: hidden;
-        box-shadow: inset 0px 0px 5px 5px $color-gray-6;
+        box-shadow: inset 0px 0px 15px 3px $color-gray-3;
         &:hover {
             overflow-y: auto;
         }
@@ -170,7 +170,7 @@
         border-bottom-right-radius: 4px;
         position: relative;
         overflow: hidden;
-        box-shadow: inset 0px 0 5px 5px $color-gray-6;
+        box-shadow: inset 0px 0 15px 3px $color-gray-3;
         &:hover {
             overflow-y: auto;
         }
