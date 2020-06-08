@@ -1,12 +1,14 @@
 .btnTicket {
     border-radius: 10px;
     font-size: 1rem;
+    margin: 0;
     i {
         margin-right: 2px;
         font-size: 1rem;
     }
     &:hover {
-        box-shadow: 0 0 5px #ffd86f, 0 0 25px #ffd86f, 0 0 50px #ffd86f!important;
+        box-shadow: 0 0 5px #ffd86f, 0 0 25px #ffd86f, 0 0 30px #ffd86f!important;
+        // box-shadow: 0 0 25px #ffd86f!important;
     }
 }
 @media screen and (max-width:768px ){
